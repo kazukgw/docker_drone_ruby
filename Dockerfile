@@ -18,5 +18,4 @@ ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
 ENV RBENV_ROOT /root/.rbenv
 
 RUN rbenv install 2.1.2
-RUN echo "install: --no-document \n update: --no-document" >> /root/.gemrc
 RUN rbenv global 2.1.2 && /root/.rbenv/shims/gem install bundler && rbenv rehash
